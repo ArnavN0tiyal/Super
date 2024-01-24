@@ -1,10 +1,14 @@
 package Super;
 import java.util.Scanner;
+import java.util.TimeZone;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Calendar;
+import java.util.Date;
+import javax.swing.JOptionPane;
 // Function language ig
 //* Main function storage
-//TODO - Make a hashmap with functions and a linkedlist
-  public class func {
+public class func {
     public void $print(Object input) {
         System.out.print(input);
     }
@@ -220,25 +224,179 @@ import java.util.ArrayList;
       }
     }
 
-    class set {
-      ArrayList<String> set = new ArrayList<String>();
-      public void SetAdd(String Add) {
-         set.add(Add);
+    class Set {
+      ArrayList<String> Set = new ArrayList<String>();
+      public void $Add(String Add) {
+         Set.add(Add);
       }
 
-      public void SetRemove(String Remove) {
-        set.remove(Remove);
+      public void $Remove(String Remove) {
+        Set.remove(Remove);
       }
 
-      public void IterateSetHorizontal(){
-        for (String i : set) {
-          System.out.print(i);
+      public void $Iterate(boolean Horizontal, boolean Vertical) {
+        if (Horizontal = true && Vertical == false) {
+          for (String i : Set) {
+           System.out.print(i + " | ");
+          }
+     } else if (Vertical == true) {
+       for (String i : Set) {
+         System.out.println(i);
         }
+     } else {
+       System.out.println("superfunction.utilSet.invaildchoice");
+     }
+    }
+
+    public void $Clear() {
+      Set.clear();
+    }
+
+    public int $Size() {
+      return Set.size();
+    }
+
+    public void $AddFirst(String add) {
+      Set.addFirst(add);
+    }
+
+    public void $AddLast(String add) {
+      Set.addLast(add);
+    }
+
+    public String $GetFirst() {
+       return Set.getFirst();
+    }
+
+    public String $GetLast() {
+      return Set.getLast();
+    }
+
+    public String $RemoveFirst() {
+      return Set.removeFirst();
+    }
+
+    public String $RemoveLast() {
+      return Set.removeLast();
+    }
+
+    public boolean $IsEmpty() {
+      return Set.isEmpty();
+    }
+
+    public boolean $Contains(String word) {
+      return Set.contains(word);
+    }
+  }
+
+    class Map {
+        HashMap<String,String> map = new HashMap<String,String>();
+        public void $Put(String key, String value) {
+          map.put(key, value);
+        }
+
+        public void $IterateKeys(boolean Horizontal, boolean Vertical) {
+            if (Horizontal = true && Vertical == false) {
+                 for (String i : map.keySet()) {
+                  System.out.print("Key: " + i + " | ");
+                 }
+            } else if (Vertical == true) {
+              for (String i : map.keySet()) {
+                System.out.println("Key: " + i);
+               }
+            } else {
+              System.out.println("superfunction.utilmap.invaildchoice");
+            }
+        }
+        public void $IterateValues(boolean Horizontal, boolean Vertical) {
+          if (Horizontal = true && Vertical == false) {
+               for (String i : map.values()) {
+                System.out.print("Key: " + i + " | ");
+               }
+          } else if (Vertical = true) {
+            for (String i : map.values()) {
+              System.out.println("Key: " + i);
+             }
+          } else {
+            System.out.println("superfunction.utilmap.invaildchoice");
+          }
       }
-      public void IterateSetVertical() {
-        for (String i : set) {
-          System.out.println(i);
+
+      public void $Iterate(boolean Horizontal, boolean Vertical) {
+        if (Horizontal = true && Vertical == false) {
+             for (String i : map.keySet()) {
+              System.out.print("Key: " + i + " " + "Value:" + map.get(i) + " | ");
+             }
+        } else if (Vertical = true) {
+          for (String i : map.keySet()) {
+            System.out.println("Key: " + i + " " + "Value: " + map.get(i));
+           }
+        } else {
+          System.out.println("superfunction.utilmap.invaildchoice");
         }
+    }
+
+    public void $Clear() {
+      map.clear();
+    }
+
+    public int $Size() {
+      return map.size();
+    }
+
+    public boolean $IsEmpty() {
+      return map.isEmpty();
+    }
+
+    public boolean $ContainsKey(String word) {
+      return map.containsKey(word);
+    }
+
+    public boolean $ContainsValue(String word) {
+      return map.containsValue(word);
+    }
+    }
+
+    class Calender {
+      Calendar c = Calendar.getInstance();
+      public Date $Date() {
+        return c.getTime();
+      }
+
+      public TimeZone $TimeZone() {
+        return c.getTimeZone();
+      }
+
+      public Date $Time() {
+        return c.getTime();
+      }
+
+      public int $GetFirstDayOfWeek() {
+        return c.getFirstDayOfWeek();
+      }
+
+      public int $GetWeeksInWeekYear() {
+        return c.getWeeksInWeekYear();
+      }
+
+      public int $GetWeekYear() {
+        return c.getWeekYear();
       }
     }
+
+    class SMessagePane {
+      public void $Message(String word) {
+        JOptionPane.showMessageDialog(null, word);
+      }
+
+      public int $ConfirmDialogue(String Title, String Word, int ChoiceType) {
+        int OptionResult = JOptionPane.showConfirmDialog(null, Word, Title, ChoiceType);
+        return OptionResult;
+      }
+
+      public String $InputDialogue(String Message) {
+        String InputResult = JOptionPane.showInputDialog(Message);
+        return InputResult;
+      }
+     }
 }
