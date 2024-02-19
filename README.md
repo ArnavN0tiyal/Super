@@ -1,14 +1,18 @@
 # About
 Super lang is a toy language made with only functions, no parsers or lexers. More about it is in the description, for now here are some imports in this toy "language" and how to use it.
 # Imports
-1. Super.func; - Imports the main toy "language"
-2. Super.func.math; - Imports the math functions
+1. Super.func - Imports the main toy "language"
+2. Super.func.math - Imports the math functions
 3. Super.func.input - Import input-output
-4. Super.func.set; - Imports sets *basically arrays*
-5. Super.time.CurrentDate; - Imports the CurrentDate function which gives the current date
-6. Super.time.CurrentTime; - Imports the CurrentTime function which gives the current time
-7. Super.time.CurrentDateTime - Imports the CurrentDateTime function which gives the current date and time
-8. Super.gui; - Imports gui
+4. Super.func.Set - Imports sets *basically arrays*
+5. Super.func.Map - Imports maps *basically hashmaps*
+6. Super.func.Calender - Imports a calender *I don't know what I am adding anymore, pls help*
+7. Super.time - Imports time
+8. Super.gui - Imports gui
+9. Super.console - Imports more mays to edit the console output
+10. Super.external - Imports functions that interact outside the console
+11. Super.autoMake - Imports pre-made games as functions
+12. Super.files - Imports a file reader and writer *Note - this import automatically creates a text file, you can change the file name and extension in the source code*
 # How to use
 There are two ways to use it:
 # First way:
