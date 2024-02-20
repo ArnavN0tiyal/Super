@@ -2,17 +2,17 @@ package Super;
 import java.time.*;
 // Stores the time class
 public class time {
-        public LocalDate $CurrentDate() {
+        public LocalDate $currentDate() {
          LocalDate Date = LocalDate.now();
          return Date;
         }
 
-    public static LocalTime $CurrentTime() {
+    public static LocalTime $currentTime() {
         LocalTime Time = LocalTime.now();
         return Time;
     }
 
-    public static LocalDateTime $CurrentDateTime() {
+    public static LocalDateTime $currentDateTime() {
         LocalDateTime DateTime = LocalDateTime.now();
         return DateTime;
     }

@@ -5,16 +5,16 @@ import java.io.IOException;
 public class external {
         static final Runtime run = Runtime.getRuntime();
         static Process proc;
-        public void $Shutdown() throws IOException {
+        public void $shutdown() throws IOException {
             proc = run.exec(new String[]{"cmd","/C","Start","shutdown", "/s"});
         }
-         public void $Dir() throws IOException {
+         public void $dir() throws IOException {
             proc = run.exec(new String[]{"cmd","/C","Start","dir"});
          }
-         public void $Run(String runProgram) throws IOException {
+         public void $run(String runProgram) throws IOException {
             switch(runProgram) {
                 case "$EDGE":
-                    proc = run.exec(new String[]{"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"});
+                proc = run.exec(new String[]{"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"});
                 break;
                 case "$CMD":
                 proc = run.exec(new String[]{"cmd","/C","Start","Super Prompt"});
