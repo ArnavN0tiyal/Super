@@ -14,9 +14,10 @@ Super lang is a toy language made with only functions, no parsers or lexers. Mor
 11. Super.autoMake - Imports pre-made games as functions
 12. Super.files - Imports a file reader and writer (Note - this import automatically creates a text file, you can change the file name and extension in the source code)
 # How to use
-Make a object of the import you want to use like - Super.func main = new func(); or Super.math math = new math();
+If you are using it inside the package -
+Make a object of the class you want to use like - func main = new func(); or math math = new math();
 Use the functions like - main.$print("Hello"); or math.abs(10);
+If you are using it outside the package -
+Only one thing changes, that you have to import the super package's class instead of straight off making a object of it
 # Tip
-1. If you want to understand this deeper then I recommend reading the code
-2. I recommend extending files instead of importing
-3. Put your files inside the package for it to work
+If you want to understand this deeper then I recommend reading the code
