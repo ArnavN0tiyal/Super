@@ -8,13 +8,13 @@ import java.io.FileReader;
 
 public class files {
     static File file = new File("Super.txt");
-    public void $FileWrite(String txt) throws IOException {
+    public void $fileWrite(String txt) throws IOException {
         FileWriter filewriter = new FileWriter(file);
         filewriter.write(txt);
         filewriter.flush();
         filewriter.close();
     }
-    public String $FileRead() throws IOException {
+    public String $fileRead() throws IOException {
         FileReader fileReader = new FileReader(file);
         BufferedReader bufferedReader = new BufferedReader(fileReader);
         String str1 = " ", str2 = " ";

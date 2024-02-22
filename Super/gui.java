@@ -7,16 +7,16 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 public class gui {
-        public void $Message(String word) {
+        public void $message(String word) {
           JOptionPane.showMessageDialog(null, word);
         }
   
-        public int $ConfirmDialogue(String Title, String Word, int ChoiceType) {
+        public int $confirmDialogue(String Title, String Word, int ChoiceType) {
           int OptionResult = JOptionPane.showConfirmDialog(null, Word, Title, ChoiceType);
           return OptionResult;
         }
   
-        public String $InputDialogue(String Message) {
+        public String $inputDialogue(String Message) {
           String InputResult = JOptionPane.showInputDialog(Message);
           return InputResult;
         }
@@ -24,19 +24,19 @@ public class gui {
         JFrame jf = new JFrame();
         JLabel jl = new JLabel();
         JEditorPane jep = new JEditorPane();
-        public void $SFrameTitle(String title) {
+        public void $frameTitle(String title) {
             jf.setTitle(title);
         }
 
-        public void $SFrameStart() {
+        public void $frameStart() {
             jf.setVisible(true);
         }
 
-        public void $SetSize(int height, int width) {
+        public void $setSize(int height, int width) {
             jf.setSize(width, height);
         }
 
-        public void $AddText(String word, int height, int width, boolean visible) {
+        public void $addText(String word, int height, int width, boolean visible) {
             JLabel component;
             component = new JLabel(word);
             component.setSize(height, width);
@@ -45,11 +45,11 @@ public class gui {
             jf.add(jl);
         }
 
-        public void $AddEditorPane() {
+        public void $addEditorPane() {
             jf.add(jep);
         }
 
-        public void $Menu(String item, String title) {
+        public void $menu(String item, String title) {
           JMenuItem jmt = new JMenuItem(item);
           JMenu j = new JMenu(title);
           JMenuBar jm = new JMenuBar();

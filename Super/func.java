@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Calendar;
 import java.util.Date;
+
 // Function language ig
 //* Main function storage
 public class func {
@@ -223,17 +224,17 @@ public class func {
       }
     }
 
-    class Set {
+    class set {
       ArrayList<String> Set = new ArrayList<String>();
-      public void $Add(String Add) {
+      public void $add(String Add) {
          Set.add(Add);
       }
 
-      public void $Remove(String Remove) {
+      public void $remove(String Remove) {
         Set.remove(Remove);
       }
 
-      public void $Iterate(boolean Horizontal, boolean Vertical) {
+      public void $iterate(boolean Horizontal, boolean Vertical) {
         if (Horizontal = true && Vertical == false) {
           for (String i : Set) {
            System.out.print(i + " | ");
@@ -247,54 +248,54 @@ public class func {
      }
     }
 
-    public void $Clear() {
+    public void $clearSet() {
       Set.clear();
     }
 
-    public int $Size() {
+    public int $setSize() {
       return Set.size();
     }
 
-    public void $AddFirst(String add) {
+    public void $addFirst(String add) {
       Set.addFirst(add);
     }
 
-    public void $AddLast(String add) {
+    public void $addLast(String add) {
       Set.addLast(add);
     }
 
-    public String $GetFirst() {
+    public String $getFirst() {
        return Set.getFirst();
     }
 
-    public String $GetLast() {
+    public String $getLast() {
       return Set.getLast();
     }
 
-    public String $RemoveFirst() {
+    public String $removeFirst() {
       return Set.removeFirst();
     }
 
-    public String $RemoveLast() {
+    public String $removeLast() {
       return Set.removeLast();
     }
 
-    public boolean $IsEmpty() {
+    public boolean $isEmpty() {
       return Set.isEmpty();
     }
 
-    public boolean $Contains(String word) {
+    public boolean $contains(String word) {
       return Set.contains(word);
     }
   }
 
-    class Map {
+    class map {
         HashMap<String,String> map = new HashMap<String,String>();
         public void $Put(String key, String value) {
           map.put(key, value);
         }
 
-        public void $IterateKeys(boolean Horizontal, boolean Vertical) {
+        public void $iterateKeys(boolean Horizontal, boolean Vertical) {
             if (Horizontal = true && Vertical == false) {
                  for (String i : map.keySet()) {
                   System.out.print("Key: " + i + " | ");
@@ -307,7 +308,7 @@ public class func {
               System.out.println("superfunction.utilmap.invaildchoice");
             }
         }
-        public void $IterateValues(boolean Horizontal, boolean Vertical) {
+        public void $iterateValues(boolean Horizontal, boolean Vertical) {
           if (Horizontal = true && Vertical == false) {
                for (String i : map.values()) {
                 System.out.print("Key: " + i + " | ");
@@ -321,7 +322,7 @@ public class func {
           }
       }
 
-      public void $Iterate(boolean Horizontal, boolean Vertical) {
+      public void $iterate(boolean Horizontal, boolean Vertical) {
         if (Horizontal = true && Vertical == false) {
              for (String i : map.keySet()) {
               System.out.print("Key: " + i + " " + "Value:" + map.get(i) + " | ");
@@ -335,51 +336,51 @@ public class func {
         }
     }
 
-    public void $Clear() {
+    public void $clearMap() {
       map.clear();
     }
 
-    public int $Size() {
+    public int $mapSize() {
       return map.size();
     }
 
-    public boolean $IsEmpty() {
+    public boolean $isEmpty() {
       return map.isEmpty();
     }
 
-    public boolean $ContainsKey(String word) {
+    public boolean $containsKey(String word) {
       return map.containsKey(word);
     }
 
-    public boolean $ContainsValue(String word) {
+    public boolean $containsValue(String word) {
       return map.containsValue(word);
     }
     }
 
-    class Calender {
+    class calender {
       Calendar c = Calendar.getInstance();
-      public Date $Date() {
+      public Date $date() {
         return c.getTime();
       }
 
-      public TimeZone $TimeZone() {
+      public TimeZone $timeZone() {
         return c.getTimeZone();
       }
 
-      public Date $Time() {
+      public Date $time() {
         return c.getTime();
       }
 
-      public int $GetFirstDayOfWeek() {
+      public int $getFirstDayOfWeek() {
         return c.getFirstDayOfWeek();
       }
 
-      public int $GetWeeksInWeekYear() {
+      public int $getWeeksInWeekYear() {
         return c.getWeeksInWeekYear();
       }
 
-      public int $GetWeekYear() {
+      public int $getWeekYear() {
         return c.getWeekYear();
       }
-    }
+    } 
 }

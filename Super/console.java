@@ -4,7 +4,9 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class console {
-    public static void $TXT_COLOR(String colour) {
+    Runtime run = Runtime.getRuntime();
+    Process proc;
+    public void $TXT_COLOR(String colour) {
         final String RESET = "\033[0m";  
         final String BLACK = "\033[0;30m"; 
         final String RED = "\033[0;31m";  
@@ -27,12 +29,12 @@ public class console {
         }
      }
 
-     public static void $Clear() {
+     public void $clear() {
         System.out.print("\033[H\033[2J"); 
         System.out.flush();
      }
 
-    public static void ascii_value(char ASCII_VALUE) throws IOException {
+    public void $ascii(char ASCII_VALUE) throws IOException {
     Scanner sc = new Scanner(System.in);
     int ascii_value = System.in.read();
     sc.nextLine();

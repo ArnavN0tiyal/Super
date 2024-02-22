@@ -10,7 +10,7 @@ public class autoMake {
         System.out.print("\033[H\033[2J"); 
         System.out.flush();
     }
-    public void $Rps() {
+    public void $rps() {
         sc = new Scanner(System.in);
         do {
             System.out.print("0) Exit\n1) 1v1\n2) Computer\nType your choice: ");
@@ -80,7 +80,7 @@ public class autoMake {
         } while (RPSCHOICE != 0);
         sc.close();
      }
-     public static void $Numberguess() {
+     public void $numberGuess() {
         int range = 10;
         int chances = (int)(1 + Math.random()* 1000);
         int num;
@@ -111,7 +111,7 @@ public class autoMake {
         } while (guess != num || chances == 0);
      }
 
-    public static void $TodoManager() {
+    public void $todoManager() {
     ArrayList<String> Tasks = new ArrayList<String>();
     Iterator<String> it = Tasks.iterator();
     int choice;
