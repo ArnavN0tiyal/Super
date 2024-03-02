@@ -1,4 +1,5 @@
 package Super;
+
 import javax.swing.JOptionPane;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -6,55 +7,58 @@ import javax.swing.JEditorPane;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+
 public class gui {
-        public void $message(String word) {
-          JOptionPane.showMessageDialog(null, word);
-        }
-  
-        public int $confirmDialogue(String Title, String Word, int ChoiceType) {
-          int OptionResult = JOptionPane.showConfirmDialog(null, Word, Title, ChoiceType);
-          return OptionResult;
-        }
-  
-        public String $inputDialogue(String Message) {
-          String InputResult = JOptionPane.showInputDialog(Message);
-          return InputResult;
-        }
+  public void $message(String word) {
+    JOptionPane.showMessageDialog(null, word);
+  }
 
-        JFrame jf = new JFrame();
-        JLabel jl = new JLabel();
-        JEditorPane jep = new JEditorPane();
-        public void $frameTitle(String title) {
-            jf.setTitle(title);
-        }
+  public int $confirmDialogue(String title, String word, int choiceType) {
+    int optionResult = JOptionPane.showConfirmDialog(null, word, title, choiceType);
+    return optionResult;
+  }
 
-        public void $frameStart() {
-            jf.setVisible(true);
-        }
+  public String $inputDialogue(String message) {
+    String inputResult = JOptionPane.showInputDialog(message);
+    return inputResult;
+  }
 
-        public void $setSize(int height, int width) {
-            jf.setSize(width, height);
-        }
+  JFrame jFrame = new JFrame();
+  JLabel jLabel = new JLabel();
+  JEditorPane jEditorPane = new JEditorPane();
 
-        public void $addText(String word, int height, int width, boolean visible) {
-            JLabel component;
-            component = new JLabel(word);
-            component.setSize(height, width);
-            component.setVisible(visible);
-            jl.add(component);
-            jf.add(jl);
-        }
+  public void $frameTitle(String title) {
+    jFrame.setTitle(title);
+  }
 
-        public void $addEditorPane() {
-            jf.add(jep);
-        }
+  public void $frameStart() {
+    jFrame.setVisible(true);
+  }
 
-        public void $menu(String item, String title) {
-          JMenuItem jmt = new JMenuItem(item);
-          JMenu j = new JMenu(title);
-          JMenuBar jm = new JMenuBar();
-          j.add(jmt);
-          jm.add(j);
-          jf.setJMenuBar(jm);
-        }
-    }
+  public void $setSize(int height, int width) {
+    jFrame.setSize(width, height);
+  }
+
+  public void $addText(String word, int height, int width, boolean visible) {
+    JLabel component;
+    component = new JLabel(word);
+    component.setSize(height, width);
+    component.setVisible(visible);
+    jLabel.add(component);
+    jFrame.add(jLabel);
+  }
+
+  public void $addEditorPane() {
+    jFrame.add(jEditorPane);
+  }
+
+  public void $menu(String item, String title) {
+    JMenuItem jMenuItem = new JMenuItem(item);
+    JMenu jMenu = new JMenu(title);
+    JMenuBar jMenuBar = new JMenuBar();
+    jMenu.add(jMenuItem);
+    jMenuBar.add(jMenu);
+    jFrame.setJMenuBar(jMenuBar);
+  }
+}
+
