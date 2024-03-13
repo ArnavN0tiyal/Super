@@ -1,5 +1,5 @@
 # About
-Super lang is a toy language made with only functions, no parsers or lexers. More about it is in the description, for now here are some imports in this toy "language" and how to use it.
+Super is a set of functions designed to make java a bit easier.
 # Imports
 1. Super.func - Imports the main toy "language"
 2. Super.func.math - Imports the math functions
