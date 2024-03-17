@@ -2,7 +2,7 @@
 Super is a set of functions designed to make java a bit easier.
 Note that I am focusing mostly on VShell, so this won't be frequently developed
 # Imports
-1. Super.func - Imports the main toy "language"
+1. Super.func - Imports the main functions
 2. Super.func.math - Imports the math functions
 3. Super.func.input - Import input-output
 4. Super.func.set - Imports sets *basically arrays*
